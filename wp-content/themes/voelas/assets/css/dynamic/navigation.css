@@ -1,0 +1,43 @@
+/* #Breadcrumbs */
+.breadcrumbs_item {
+	font-style: $breadcrumbs_font_style;
+	font-weight: $breadcrumbs_font_weight;
+	font-size: $breadcrumbs_font_size{px};
+	line-height: $breadcrumbs_line_height;
+	font-family: @font_family( $breadcrumbs_font_family );
+	letter-spacing: $breadcrumbs_letter_spacing{em};
+}
+
+.breadcrumbs_item_sep,
+.breadcrumbs_item_link {
+	color: $secondary_color;
+}
+
+.breadcrumbs_item,
+.breadcrumbs_item_link:hover {
+	color: $invert_text_color;
+}
+
+/* #Pagination */
+.pagination .page-numbers,
+.page-links > span,
+.page-links > a {
+	color: $primary_text_color;
+	font-family: @font_family( $h2_font_family );
+}
+.pagination a.page-numbers:hover,
+.pagination .page-numbers.current,
+.page-links > a:hover,
+.page-links > span {
+	color: #fff;
+	background: $secondary_color;
+}
+
+.pagination a.page-numbers.next:hover,
+.pagination a.page-numbers.prev:hover{
+	background: $primary_color;
+}
+
+.post-navigation .nav-text{
+	font-family: @font_family( $h2_font_family );
+}

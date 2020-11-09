@@ -1,0 +1,26 @@
+.breadcrumbs {
+	position: relative;
+	padding-top: 0;
+	padding-bottom: 0;
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5px;
+	.page-title {
+		text-align: left;
+		margin-top: 5px;
+		@include font-size(18/16);
+	}
+	&_wrap {
+		overflow: hidden;
+	}
+	&_item {
+		float: left;
+		text-transform: uppercase;
+		&_link:hover {
+		}
+		&_sep {
+			margin: 0 14px;
+		}
+	}
+}

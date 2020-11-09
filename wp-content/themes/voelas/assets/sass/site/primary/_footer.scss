@@ -1,0 +1,73 @@
+.site-footer {
+	&__wrap {
+		@include font-size(16/16);
+		line-height: 20px;
+		.space-between-content {
+			&:not(:empty) {
+				padding-top: 30px;
+				padding-bottom: 30px;
+			}
+			align-items: center;
+			@include media-breakpoint-down(xs) {
+				display: block;
+				text-align: center;
+			}
+		}
+	}
+}
+
+.footer-area {
+	@include make-container();
+	@include make-container-max-widths();
+	display: flex;
+	flex-wrap: wrap;
+	>.widget {
+		width: 25%;
+	}
+}
+
+.footer-soc-icon .elementor-icon{
+	position: relative;
+	i{
+		position: relative;
+		z-index: 2;
+		transition: .3s ease-out all;
+	}
+	&:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-repeat: repeat-x;
+		transition: .3s ease-out all;
+		opacity: 0;
+	}
+	&:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: rgba(255, 255, 255, 0.08);
+		pointer-events: none;
+		transform: scale(0.3);
+		transform-origin: right top;
+		opacity: 0;
+		transition: .3s ease-out all;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		-webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+		clip-path: polygon(100% 0, 0 0, 100% 100%);
+	}
+	&:hover{
+		&:before{
+			opacity: 1;
+			transform: scale(1);
+		}
+		&:after{
+			opacity: 1;
+		}
+	}
+}

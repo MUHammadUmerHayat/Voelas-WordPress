@@ -1,0 +1,95 @@
+input,
+optgroup,
+select,
+textarea {
+	font-size: 18px;
+	font-family: @font_family( $body_font_family );
+}
+
+/* #Comment, Contact, Password Forms */
+.comment-form .submit,
+.wpcf7-submit,
+.post-password-form label + input {
+	font-style: $button_font_style;
+	font-weight: $button_font_weight;
+	font-size: $button_font_size{px};
+	line-height: $button_line_height;
+	font-family: @font_family( $button_font_family );
+	letter-spacing: $button_letter_spacing{em};
+
+	color: $invert_text_color;
+	background-color: $accent_color;
+}
+.comment-form .submit:hover,
+.wpcf7-submit:hover,
+.post-password-form label + input:hover {
+	color: $invert_text_color;
+	background-color: @lighten($accent_color, 15%);
+}
+.comment-reply-title {
+	font-style: $h4_font_style;
+	font-weight: $h4_font_weight;
+	font-size: $h4_font_size{px};
+	line-height: $h4_line_height;
+	font-family: @font_family( $h4_font_family );
+	letter-spacing: $h4_letter_spacing{em};
+	color: $h4_color;
+}
+/* Cookies consent */
+.comment-form-cookies-consent label[for=wp-comment-cookies-consent]:before{
+	background: #f4f2ee;
+}
+.comment-form-cookies-consent input[type='checkbox']:checked ~ label[for=wp-comment-cookies-consent]:before {
+	color: $primary_text_color;
+	border-color: #f4f2ee;
+	background-color: #f4f2ee;
+}
+/* #Comment Reply Link */
+#cancel-comment-reply-link {
+	color: $link_color;
+}
+#cancel-comment-reply-link:hover {
+	color: $primary_color;
+}
+
+/* #Comment item */
+.wp-block-latest-comments__comment-meta,
+.comment-body .fn {
+	font-style: $h5_font_style;
+	font-weight: 600;
+	font-size: $h5_font_size{px};
+	line-height: $h5_line_height;
+	font-family: @font_family( $h5_font_family );
+	letter-spacing: $h5_letter_spacing{em};
+	color: $h5_color;
+}
+.wp-block-latest-comments__comment-date,
+.comment-date__time {
+	color: $primary_color;
+}
+.comment-reply-link {
+	font-style: $button_font_style;
+	font-weight: $button_font_weight;
+	font-size: $button_font_size{px};
+	line-height: $button_line_height;
+	font-family: @font_family( $button_font_family );
+	letter-spacing: $button_letter_spacing{em};
+}
+.wp-block-latest-comments__comment-date, .comment-date__time,
+.comment-date{
+	font-size: 14px;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: @font_family( $h5_font_family );
+}
+
+/* #Input Placeholders */
+::-webkit-input-placeholder { color: $primary_text_color; transition: .25s; }
+::-moz-placeholder          { color: $primary_text_color; transition: .25s; }
+:-moz-placeholder           { color: $primary_text_color; transition: .25s; }
+:-ms-input-placeholder      { color: $primary_text_color; transition: .25s; }
+
+.select2-container--default .select2-results__option--highlighted[aria-selected]{
+	background: $primary_color;
+}

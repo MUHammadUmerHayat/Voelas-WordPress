@@ -1,0 +1,178 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+img {
+	height: auto;
+	/* Make sure images are scaled correctly. */
+	max-width: 100%;
+	/* Adhere to container width. */
+}
+
+blockquote,
+q {
+	quotes: none;
+	&:before,
+	&:after {
+		content: '';
+	}
+}
+
+.wp-block-quote,
+blockquote{
+	position: relative;
+	@include font-size(22/16);
+	@include border-radius;
+	margin: 35px 0;
+	font-weight: 500;
+	line-height: 1.333;
+	font-style: normal;
+	text-align: left;
+	border: none;
+	padding: 0;
+	@include media-breakpoint-up(lg) {
+		@include font-size(26/16);
+		margin: 55px 0;
+	}
+	@include media-breakpoint-up(xl) {
+		@include font-size(30/16);
+	}
+	em{
+		font-style: normal;
+	}
+	p {
+		margin: 0;
+	}
+	cite {
+		display: block;
+		margin-top: 15px;
+		font-style: normal;
+		@include font-size(0.875);
+		&:before {
+			content: "- ";
+		}
+	}
+	+p{
+		margin-top: 0;
+	}
+}
+
+hr {
+	background-color: $color__background-hr;
+	border: 0;
+	height: 1px;
+	margin: 1.5em 0;
+}
+
+.edit-link {
+	display: inline-block;
+	.post-edit-link{
+		margin-top: 15px;
+		display: inline-block;
+	}
+}
+
+#dpsp-content-bottom {
+	margin-top: 35px;
+	padding: 30px 0 0;
+	border-top: 2px solid $color__background-hr;
+	@media(min-width: 992px){
+		margin-top: 55px;
+		padding: 40px 0 0;
+	}
+}
+
+.dpsp-shape-rounded .dpsp-network-btn,
+.dpsp-shape-rounded .dpsp-no-label.dpsp-network-btn .dpsp-network-icon{
+	border-radius: 0;
+	border: none !important;
+}
+.dpsp-networks-btns-wrapper.dpsp-networks-btns-content{
+	display: flex;
+	justify-content: flex-end;
+	@media(max-width: 575px){
+		justify-content: flex-start;
+	}
+	li{
+		padding: 0;
+		margin-top: 0;
+		margin-right: 6px;
+		margin-bottom: 0 !important;
+		padding-left: 0 !important;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	.dpsp-network-btn{
+		width: 52px;
+		height: 52px;
+		max-height: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #15162b;
+		transition: .3s ease-out all;
+		opacity: .9;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: $bg_gradient_orange;
+			opacity: 0;
+			transition: .3s ease-out all;
+		}
+		&:after{
+			@include hover-tringle;
+			transform: scale(0.3);
+			transform-origin: right top;
+			opacity: 0;
+			transition: .3s ease-out all;
+		}
+		&:hover{
+			background: #15162b;
+			border: none;
+			opacity: 1;
+			&:after{
+				opacity: 1;
+				transform: scale(1);
+			}
+			&:before{
+				opacity: 1;
+			}
+		}
+		.dpsp-network-icon{
+			position: relative;
+			top: auto;
+			left: auto;
+			bottom: auto;
+			right: auto !important;
+			z-index: 2;
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+## Lists
+--------------------------------------------------------------*/
+
+@import "lists";
+/*--------------------------------------------------------------
+## ToTop
+--------------------------------------------------------------*/
+
+@import "totop-button";
+/*--------------------------------------------------------------
+## Page preloader
+--------------------------------------------------------------*/
+
+@import "page-preloader";

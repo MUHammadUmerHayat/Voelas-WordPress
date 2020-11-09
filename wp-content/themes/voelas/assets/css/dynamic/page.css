@@ -1,0 +1,37 @@
+/* Body Style */
+body{
+	background: $body_background_color;
+}
+
+/* Logo */
+.site-logo__link{
+	font-family: @font_family( $header_logo_font_family );
+}
+.site-logo__link,
+.site-logo__link:hover {
+	color: $invert_text_color;
+}
+
+/* Page title */
+.page-title {
+	font-style: $h3_font_style;
+	font-weight: $h3_font_weight;
+	font-size: @font_size($h3_font_size, multiple, ceil, 0.5)px;
+	line-height: $h3_line_height;
+	font-family: @font_family( $h3_font_family );
+	letter-spacing: $h3_letter_spacing{em};
+	color: $invert_text_color;
+}
+
+@media (min-width: 992px) {
+	.page-title { font-size: @font_size($h3_font_size, multiple, ceil, 0.7)px; }
+}
+
+@media (min-width: 1200px) {
+	.page-title { font-size: $h3_font_size{px}; }
+}
+
+body{
+	background: $body_background_color;
+	overflow-x: hidden;
+}

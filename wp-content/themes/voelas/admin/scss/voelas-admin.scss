@@ -1,0 +1,177 @@
+#setting-error-tgmpa {
+	display: block;
+	clear: both;
+}
+
+tr[data-slug="slider-revolution"] + .plugin-update-tr {
+	display: none !important; }
+
+.el-license-container .el-license-field {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.el-license-container .el-license-field input {
+	font-size: 200%;
+	padding: 8px 10px 10px;
+}
+
+.el-license-container .el-license-field label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.el-license-container .el-license-active-btn {
+	margin-top: 25px;
+}
+
+.el-license-container {
+
+}
+.el-license-container .notice-error, .el-license-container div.error {
+	background: rgba(220, 50, 50, 0.11);
+	margin: 0;
+}
+.el-license-info li {
+	list-style: none;
+	padding: 0;
+}
+
+.el-license-info-title {
+	width: 170px;
+	display: inline-block;
+	position: relative;
+	padding-right: 5px;
+}
+
+.el-license-info-title:after {
+	content: ':';
+	position: absolute;
+	right: 2px;
+}
+
+.el-license-valid,
+.el-license-invalid {
+	padding: .25em .5em .2em .5em;
+	color: #fff;
+	background-color: #8fcc77;
+	border-radius: 3px;
+}
+.el-license-invalid {
+	background-color: #f44336;
+}
+.el-license-key {
+	font-weight: 700;
+	opacity: 0.8;
+}
+
+.no-customize-support .welcome-panel-column-container .welcome-panel-column:first-child {
+	display: none !important;
+}
+
+
+/* Registration */
+.df-about-wrap .notice,
+.df-about-wrap div.error,
+.df-about-wrap div.updated {
+	display: block !important;
+	max-width: 850px;
+	box-sizing: border-box;
+}
+.df-about-wrap .notice p,
+.df-about-wrap div.error p,
+.df-about-wrap div.updated p {
+	font-size: 13px;
+	line-height: 1.5em;
+}
+.df-about-wrap .notice--noregistered {
+	display: none !important;
+}
+.welcome-panel--df {
+	padding: 35px;
+}
+	.welcome-panel__lead {
+		margin-top: 0;
+	}
+	.welcome-panel--df ol li,
+	.welcome-panel--df ul li {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+.button--df-activation {
+	margin: 0 !important;
+}
+
+.wp-badge--theme {
+	background-color: #26264b;
+	background-image: url('../images/theme-icon.png') !important;
+	background-repeat: no-repeat;
+	background-size: 90px auto;
+	background-position: 50% 30% !important;
+}
+
+.welcome-panel--df-activated .el-license-active-btn .submit:last-child {
+	padding-bottom: 0;
+}
+
+
+// register notification
+.notice--noregistered {
+	position: relative;
+
+	.close {
+		position: absolute;
+		top: 0;
+		right: 10px;
+		padding: 10px 10px 10px 21px;
+		font-size: 13px;
+		line-height: 1.23076923;
+		text-decoration:none;
+
+		&::before {
+			position: absolute;
+			top: 8px;
+			left: 0;
+			background: 0 0;
+			color: #72777c;
+			content: "\f153";
+			display: block;
+			font: normal 16px/20px dashicons;
+			speak: none;
+			height: 20px;
+			text-align: center;
+			width: 20px;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			transition: all .1s ease-in-out;
+		}
+	}
+}
+
+
+.voelas-is-not-activated {
+
+	.theme-browser {
+
+		.themes {
+	
+			.theme {
+	
+				&[data-slug="voelas"] {
+			
+					.notice {
+						display: none !important;
+					}
+				}
+			}
+		}
+	}
+
+	.theme-overlay {
+
+		.theme-author + .notice {
+			display: none !important;
+		}
+	}
+}

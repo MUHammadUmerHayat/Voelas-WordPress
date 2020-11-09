@@ -1,0 +1,65 @@
+/* #Button Appearance Styles (regular scheme) */
+.wp-block-button__link,
+.elementor-button.elementor-size-xs,
+.elementor-button.elementor-size-sm,
+.elementor-button.elementor-size-md,
+.elementor-button.elementor-size-lg,
+.elementor-button.elementor-size-xl,
+.btn,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+	font-style: $button_font_style;
+	font-weight: $button_font_weight;
+	font-size: $button_font_size{px};
+	line-height: $button_line_height;
+	font-family: @font_family( $button_font_family );
+	letter-spacing: $button_letter_spacing{em};
+	color: $invert_text_color;
+}
+.btn:hover,
+input[type='button']:hover,
+input[type='reset']:hover,
+input[type='submit']:hover,
+input[type='reset']:hover {
+	color: $invert_text_color;
+}
+
+.btn.invert-button {
+	color: $invert_text_color;
+}
+.btn.invert-button:hover {
+	color: $invert_text_color;
+	border-color: $accent_color;
+	background-color: $accent_color;
+}
+
+.comment-reply-link,
+.post-navigation .nav-links a,
+input[type='button'],
+input[type='reset'],
+input[type='submit'],
+.wp-block-freeform input[type=reset],
+.wp-block-freeform input[type=reset]:active,
+.wp-block-freeform input[type=reset]:focus,
+.wp-block-freeform input[type=reset]:hover,
+.wp-block-button__link,
+.elementor-button.elementor-size-sm,
+.elementor-button.elementor-size-md,
+.elementor-button.elementor-size-lg,
+.elementor-button.elementor-size-xl,
+.btn{
+	background-image: linear-gradient(to right, $fourth_color 0%, $primary_color 50%, $fourth_color 100%);
+}
+.form-wrap.reserve-seat li.form-submit .btn-orange,
+.post-navigation .nav-previous a,
+.btn-orange .wp-block-button__link,
+.btn-orange .elementor-button.elementor-size-sm,
+.btn-orange .elementor-button.elementor-size-md,
+.btn-orange .elementor-button.elementor-size-lg,
+.btn-orange .elementor-button.elementor-size-xl{
+	background-image: linear-gradient(to right, $third_color 0%, $secondary_color 50%, $third_color 100%);
+}
+.is-style-outline .wp-block-button__link:hover{
+	border-color: $secondary_color;
+}

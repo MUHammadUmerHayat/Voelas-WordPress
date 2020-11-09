@@ -1,0 +1,10 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  viewBox="0 0 31 31" xml:space="preserve" width="31px" height="31px">
+<style>
+	path{
+		fill: url(#svg-gradient) #d90e90;
+	}
+</style>
+	<path d="M15.529 31.059C6.966 31.059 0 24.093 0 15.529 0 6.967 6.966 0 15.529 0s15.529 6.967 15.529 15.529c.001 8.564-6.966 15.53-15.529 15.53zm0-29.284c-7.584 0-13.754 6.17-13.754 13.754 0 7.585 6.17 13.755 13.754 13.755s13.754-6.17 13.754-13.755c.001-7.584-6.169-13.754-13.754-13.754z"></path><path d="M20.292 21.179a.883.883 0 0 1-.628-.26l-4.762-4.762a.886.886 0 0 1-.26-.628V5.454a.887.887 0 0 1 1.775 0v9.708l4.502 4.502a.887.887 0 0 1-.627 1.515z"></path>
+	<linearGradient id="svg-gradient" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(130,46,168);stop-opacity:1"></stop><stop offset="100%" style="stop-color:rgb(217,14,144);stop-opacity:1"></stop></linearGradient>
+</svg>

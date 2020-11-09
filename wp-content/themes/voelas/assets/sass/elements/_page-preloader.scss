@@ -1,0 +1,53 @@
+$main-loader-width: 30px;
+$main-loader-border-width: 3px;
+
+.page-preloader-cover {
+	position: fixed;
+	z-index: 1200;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+	width: 100%;
+	height: 100%;
+	background-color: $color__bg-preloader-cover;
+	background-attachment: fixed;
+	&.hide-loader{
+		transition: all 0.5s ease-in 0.7s;
+		opacity: 0;
+		pointer-events: none;
+	}
+}
+
+.page-preloader {
+	border-radius: 50%;
+	width: $main-loader-width;
+	height: $main-loader-width;
+	border: $main-loader-border-width solid transparent;
+	animation: tm_spin 1s linear infinite;
+	z-index: 11;
+}
+
+.page-preloader-content{
+	padding: 20px;
+	@include font-size(18/16);
+}
+
+.website-loading{
+	overflow-y: scroll;
+	.site{
+		overflow: hidden;
+		height: 1vh;
+	}
+}
+
+@keyframes tm_spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

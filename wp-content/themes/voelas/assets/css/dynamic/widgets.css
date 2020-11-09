@@ -1,0 +1,74 @@
+.widget_recent_entries a,
+.widget_recent_comments a {
+	color: $secondary_color;
+}
+
+.widget_recent_entries a:hover,
+.widget_recent_comments a:hover {
+	color: $link_color;
+}
+.wp-block-categories-list li a,
+.wp-block-archives-list li a,
+.widget_tag_cloud .tag-cloud-link,
+.widget ul li a{
+	color: $secondary_text_color;
+}
+.wp-block-categories-list li a:hover,
+.wp-block-archives-list li a:hover,
+.widget ul li a:hover{
+	color: $accent_color;
+}
+.widget_recent_comments .recentcomments:before,
+.wp-block-categories-list li:hover:before,
+.wp-block-archives-list li:hover:before,
+.widget_tag_cloud .tag-cloud-link:hover,
+.widget ul li:hover:before{
+	color: $primary_color;
+}
+
+.widget_recent_entries .post-date,
+.widget_recent_comments .recentcomments {
+	color: $secondary_text_color;
+}
+
+.widget_recent_comments .comment-author-link a {
+	color: $secondary_text_color;
+}
+.widget_recent_comments .comment-author-link a:hover {
+	color: $link_color;
+}
+
+.widget_calendar th,
+.widget_calendar caption {
+	color: $accent_color;
+}
+
+.widget_calendar tbody td a {
+	color: $invert_text_color;
+	background-color: $primary_color;
+}
+
+.widget_calendar tbody td a:hover {
+	background-color: $accent_color;
+	color: $invert_text_color;
+}
+
+.widget_calendar tfoot td a:before{
+	border-color: $accent_color
+}
+.widget_calendar tfoot td a {
+	color: $accent_color;
+}
+
+.widget_calendar tfoot td a:hover:before{
+	border-color: $primary_color;
+}
+.widget_calendar tfoot td a:hover {
+	color: $primary_color;
+}
+
+.widget_rss ul li .rsswidget,
+.widget_rss cite,
+.widget_rss .rss-date{
+	font-family: @font_family( $h6_font_family );
+}

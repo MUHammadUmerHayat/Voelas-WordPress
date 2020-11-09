@@ -1,0 +1,20 @@
+.search-form {
+	display: flex;
+	align-items: center;
+	label {
+		width: 100%;
+	}
+	&__field[type='search'] {
+		box-sizing: border-box;
+	}
+	&__submit.btn {
+		flex: 0 0 auto;
+		margin-left: 10px;
+	}
+}
+.search-no-results{
+	p{
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+}

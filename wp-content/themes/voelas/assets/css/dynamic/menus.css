@@ -1,0 +1,95 @@
+/* #Main Menu */
+.main-navigation {
+	font-style: $menu_font_style;
+	font-weight: $menu_font_weight;
+	font-size: $menu_font_size{px};
+	line-height: $menu_line_height;
+	font-family: @font_family( $menu_font_family );
+	letter-spacing: $menu_letter_spacing{em};
+}
+
+.desktop-layout .menu>.menu-item a:before{
+	background-color: $invert_text_color;
+}
+.main-navigation a,
+.menu-item-has-children:before {
+	color: $invert_text_color;
+}
+
+.menu-item .sub-menu>li>a{
+	transition: .15s ease-in-out;
+	color: $primary_text_color;
+}
+.menu-item .sub-menu>li>a:before,
+.menu-item .sub-menu>li>a:hover{
+	color: $primary_color;
+}
+
+.main-navigation a:hover:before,
+.main-navigation .current_page_item>a:before,
+.main-navigation .current-menu-item>a:before,
+.main-navigation .current_page_ancestor>a:before,
+.main-navigation .current-menu-ancestor>a:before{
+}
+.desktop-layout .menu>.menu-item a:hover:before,
+.desktop-layout .menu>.menu-item.current-menu-parent a:before{
+	opacity: 1;
+	transform: scale(1, 1);
+}
+
+/* #Mobile Menu */
+.mobile-menu-toggle-button {
+	color: $invert_text_color;
+	background-color: $accent_color;
+}
+
+@media(max-width: 767px){
+	.main-navigation a, .menu-item-has-children:before {
+		color: $primary_text_color;
+	}
+}
+
+/* mega menu */
+#mega-menu-wrap-main #mega-menu-main > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link,
+#mega-menu-wrap-main #mega-menu-main > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link,
+#mega-menu-wrap-main #mega-menu-main > li.mega-menu-item.mega-toggle-on > a.mega-menu-link,
+#mega-menu-wrap-main #mega-menu-main > li.mega-menu-item > a.mega-menu-link:hover,
+#mega-menu-wrap-main ul#mega-menu-main > li.mega-menu-item > a.mega-menu-link{
+	font-style: $menu_font_style;
+	font-weight: $menu_font_weight;
+	font-size: $menu_font_size{px};
+	line-height: $menu_line_height;
+	font-family: @font_family( $menu_font_family );
+	letter-spacing: $menu_letter_spacing{em};
+}
+
+#mega-menu-wrap-main #mega-menu-main > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:hover,
+#mega-menu-wrap-main #mega-menu-main > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:hover,
+#mega-menu-wrap-main #mega-menu-main > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:focus,
+#mega-menu-wrap-main #mega-menu-main > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:focus,
+#mega-menu-wrap-main #mega-menu-main > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link,
+#mega-menu-wrap-main #mega-menu-main > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link,
+#mega-menu-wrap-main #mega-menu-main > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:hover,
+#mega-menu-wrap-main #mega-menu-main > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:focus,
+#mega-menu-wrap-main #mega-menu-main > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link{
+	font-size: 16px;
+	font-weight: 500;
+	font-family: @font_family( $menu_font_family );
+	letter-spacing: $menu_letter_spacing{em};
+}
+
+#mega-menu-wrap-main #mega-menu-main > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link,
+#mega-menu-wrap-main #mega-menu-main > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link,
+#mega-menu-wrap-main #mega-menu-main > li.mega-menu-item.mega-current-page-ancestor > a.mega-menu-link,
+#mega-menu-wrap-main #mega-menu-main > li.mega-menu-item > a.mega-menu-link{
+	color: $invert_text_color;
+}
+.menu-two #mega-menu-wrap-main #mega-menu-main>li.mega-current-menu-parent>a.mega-menu-link,
+#mega-menu-wrap-main #mega-menu-main > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:hover,
+#mega-menu-wrap-main #mega-menu-main > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:hover,
+#mega-menu-wrap-main #mega-menu-main > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:focus,
+#mega-menu-wrap-main #mega-menu-main > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link:focus,
+#mega-menu-wrap-main #mega-menu-main > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:hover,
+#mega-menu-wrap-main #mega-menu-main > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:focus{
+	color: $primary_color;
+}

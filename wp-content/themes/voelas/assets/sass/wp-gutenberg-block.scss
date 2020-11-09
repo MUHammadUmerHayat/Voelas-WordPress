@@ -1,0 +1,260 @@
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "normalize";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "typography/typography";
+
+/*--------------------------------------------------------------
+# Grid
+--------------------------------------------------------------*/
+@import "grid/grid";
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import "elements/elements";
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media/media";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "forms/forms";
+
+/*--------------------------------------------------------------
+# Comments
+--------------------------------------------------------------*/
+@import "modules/comments";
+
+/*--------------------------------------------------------------
+# post-formats
+--------------------------------------------------------------*/
+@import "site/primary/post-formats";
+
+/*--------------------------------------------------------------
+### Main column width
+--------------------------------------------------------------*/
+.wp-block {
+	max-width: 1000px;
+	&[data-align="wide"], &[data-align="full"]{
+		max-width: inherit;
+	}
+}
+/*--------------------------------------------------------------
+### Gutenberg editor style controls
+--------------------------------------------------------------*/	
+a.components-external-link{
+	color: #0073aa;
+	margin-right: 10px;
+	overflow: hidden;
+	position: relative;
+	text-decoration: underline;
+	white-space: nowrap;
+	width: 100%;
+	&:hover{
+		color: #0073aa;
+	}
+}
+.wp-block-quote__citation a:before{
+	content: "— ";
+}
+.wp-block-code .block-editor-plain-text{
+	color: $primary_color;
+	font-size: 16px;
+}
+.wp-block-html .block-editor-plain-text{
+	font-size: 16px;
+	color: $primary_color;
+	border: none;
+	border-radius: 0;
+}
+.wp-block-cover-image .wp-block-cover__inner-container,
+.wp-block-cover .wp-block-cover__inner-container{
+	position: relative;
+}
+.wp-block-pullquote__citation:before,
+.wp-block-quote__citation:before{
+	content: "— ";
+}
+.wp-block-freeform.block-library-rich-text__tinymce code{
+	background: transparent;
+	padding: 2px 5px;
+}
+select,
+.wp-block-archives-dropdown select{
+	height: auto;
+	border-color: #aaa;
+	border-radius: 0;
+}
+.wp-block-pullquote__citation, .wp-block-pullquote cite, .wp-block-pullquote footer{
+	color: $primary_color;
+	text-transform: none;
+}
+
+.wp-block-freeform.block-library-rich-text__tinymce pre{
+	color: $primary_color;
+	font-size: 16px;
+}
+.editor-block-list__block-edit{
+	.wp-block-freeform.block-library-rich-text__tinymce{
+		a {
+			color: $accent_color;
+			&:hover{
+				color: $link_hover_color;
+			}
+		}
+		blockquote{
+			border: none;
+		}
+	}
+	.wp-block-pullquote{
+		text-align: left;
+		border: none;
+	}
+	table br{
+		display: none;
+	}
+	.aligncenter{
+		display: flex;
+	}
+	.alignfull{
+		width: 100vw;
+		max-width: 100vw;
+		margin-left: calc( 50% - 50vw);
+		&.wp-block-gallery{
+			width: 100%;
+			max-width: 100%;
+			margin-left: 0;
+		}
+	}
+	.wp-block-button__link br{
+		display: none;
+	}
+	ul.wp-block-categories__list,
+	ul.wp-block-archives-list{
+		list-style-type: none;
+		padding-left: 0;
+	}
+	ul.wp-block-archives-list li:before,
+	ul.wp-block-categories__list li:before {
+		content: '\f105';
+		display: inline-block;
+		font: normal normal normal 14px/1 FontAwesome;
+		font-size: inherit;
+		margin-right: 10px;
+		color: $accent_color;
+	}
+	hr.wp-block-separator:not(.is-style-dots){
+		background-color: #8f98a1;
+	}
+	hr.wp-block-separator.is-style-dots{
+		color: #8f98a1;
+	}
+	hr.wp-block-separator:not(.is-style-wide):not(.is-style-dots){
+		border: 0;
+		height: 2px;
+		margin: 1.5em auto;
+	}
+	input[type='password'],
+	input[type=text]{
+		border-radius: 0;
+	}
+	.wp-block-freeform .button,
+	.wp-block-freeform .button-primary,
+	.wp-block-freeform .button-secondary{
+		height: auto;
+		box-shadow: none;
+	}
+	.wp-block-freeform input[type=reset],
+	.wp-block-freeform input[type=reset]:active,
+	.wp-block-freeform input[type=reset]:focus,
+	.wp-block-freeform input[type=reset]:hover{
+		padding: 28px 49px;
+		color: #fff;
+	}
+
+	input[type='submit'].button:hover{
+		background: $button_gradient;
+		background-position: 100% 0;
+		color: #fff;
+	}
+	.alignwide {
+		margin-left  : -80px;
+		margin-right : -80px;
+		max-width: initial;
+		width: calc(100% + 160px);
+	}
+	.wp-block-quote__citation,
+	.wp-block-quote cite,
+	.wp-block-quote footer{
+		color: #fff;
+		font-size: 16px;
+	}
+	.wp-block-quote.is-large p,
+	.wp-block-quote.is-style-large p,
+	.wp-block-quote:not(.is-large):not(.is-style-large) p,
+	blockquote p{
+		font-size: 22px;
+		@media(min-width: 992px){
+			font-size: 26px;
+		}
+		@media(min-width: 1200px){
+			font-size: 30px;
+		}
+	}
+	.is-style-solid-color blockquote{
+		margin-left: auto;
+		margin-right: auto;
+		text-align: left;
+		max-width: 60%;
+	}
+	.wp-block-categories .wp-block-categories__list,
+	.wp-block-archives-list{
+		li {
+			position: relative;
+			position: relative;
+			padding-left: 25px;
+			line-height: 1.2;
+			> ul,
+			> ol {
+				margin-top: 23px;
+				margin-left: 0;
+				li{
+					padding-left: 15px;		
+				}
+			}
+			+ li{
+				margin-top: 23px;
+			}
+			&:before{
+				position: absolute;
+				display: inline-block;
+				left: 0;
+				top: 0;
+				min-width: 25px;
+				content: '\f105';
+				font: 400 16px/20px 'FontAwesome';
+				transition: all 0.3s ease-in-out;
+				color: $primary_color;
+			}
+			a{
+				color: $primary_color;
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+html {
+	@include font-size(1);
+}
+
+input,
+select,
+textarea {
+}
+
+p {
+	margin: 0;
+}
+
+* + p {
+	margin-top: 15px;
+}
+
+a {
+	transition: 0.3s ease-in-out;
+}
+
+@import "headings";
+@import "copy";

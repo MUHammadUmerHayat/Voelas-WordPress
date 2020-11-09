@@ -1,0 +1,55 @@
+.post-author {
+	&-bio {
+		display: flex;
+		align-items: center;
+		margin: 40px 0 30px;
+		border-bottom: 2px solid $color__background-hr;
+		padding-bottom: 35px;
+		@include media-breakpoint-up(lg) {
+			padding-bottom: 60px;
+			margin-bottom: 50px;
+		}
+		@include media-breakpoint-up(xl) {
+			padding-bottom: 50px;
+		}
+		@media(max-width: 575px){
+			flex-direction: column;
+			align-items: stretch;
+		}
+	}
+	&__avatar {
+			flex: 0 0 auto;
+			margin-right: 25px;
+			@include media-breakpoint-up(xl) {
+				margin-right: 45px;
+			}
+			@media(max-width: 575px){
+				margin-right: 0;
+				margin-bottom: 9px;
+			}
+		.avatar {
+			width: 170px;
+			height: 190px;
+			object-fit: cover;
+		}
+	}
+	&__content {
+	}
+	&__title {
+		text-transform: uppercase;
+		pointer-events: none;
+		margin-bottom: 10px;
+		@include media-breakpoint-up(xl) {
+			margin-bottom: 35px;
+		}
+	}
+	&__link{
+		display: inline-block;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-decoration: underline;
+		letter-spacing: .2em;
+		margin-top: 20px;
+	}
+}

@@ -1,0 +1,32 @@
+$accent_color: #26264b;
+$primary_color: #8c8c9a;
+$link_hover_color: #d90e90;
+$color_orange: #f09922;
+$color_violet: #822ea8;
+$color__white: #fff;
+$color__light: #f1f4f6;
+$color__lightblue: #f2f6fb;
+$color__dark: #000;
+$color__darkgray: #212429;
+$color__darkgray2: #3b3d42;
+
+$bg_gradient: linear-gradient(to right, $color_violet 0%, $link_hover_color 100%);
+$button_gradient: linear-gradient(to right, $color_violet 0%, $link_hover_color 50%, $color_violet 100%);
+
+$bg_gradient_orange: linear-gradient(to right, #ef7630 0%, $color_orange 100%);
+$button_gradient_orange: linear-gradient(to right, #ef7630 0%, $color_orange 50%, #ef7630 100%);
+
+$color__bg-preloader-cover: $color__white;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #f4f2ee;
+$color__background-input: #f4f2ee;
+$color__background-pre: #f4f2ee;
+
+$color__text-screen: #21759b;
+$color__text-input: #8c8c9a;
+
+$color__border-button: #ccc;
+$color__border-input: $color__background-hr;
+$color__border-abbr: #666;
+$color__border-table: $color__background-hr;
+$color__border-pre: darken( $color__background-pre, 10% );

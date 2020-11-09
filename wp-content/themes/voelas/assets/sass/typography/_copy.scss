@@ -1,0 +1,77 @@
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+.wp-block-code,
+pre {
+	font-family: $font__pre;
+	line-height: $font__line-height-pre;
+	overflow: auto;
+	max-width: 100%;
+	margin: 0 0 1.5em;
+	padding: 1.5em;
+	background: $color__background-pre;
+	border: none;
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	border-radius: 0;
+
+	@include font-size(1);
+}
+
+code, kbd, tt, var {
+	font-family: $font__code;
+
+	@include font-size(0.9375);
+}
+
+code {
+	padding: 2px 5px;
+	border: none;
+}
+
+abbr, acronym {
+	cursor: help;
+	border-bottom: 1px dotted $color__border-abbr;
+}
+
+mark, ins {
+	text-decoration: none;
+	padding: 3px 5px;
+}
+
+big {
+	font-size: 125%;
+}
+
+.text-strike {
+	text-decoration: line-through;
+}
+.list-ordered{
+	counter-reset: li;
+	text-align: left;
+	>li{
+		position: relative;
+		padding-left: 25px;
+		+ li{
+			margin-top: 10px;
+			@media(max-width: 767px){
+				margin-top: 5px;
+			}
+		}
+		&:before{
+			position: absolute;
+			content: counter(li, decimal) ".";
+			counter-increment: li;
+			top: 0;
+			left: 0;
+			display: inline-block;
+			width: 15px;
+		}
+	}
+}
