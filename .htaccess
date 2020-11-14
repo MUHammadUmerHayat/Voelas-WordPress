@@ -10,6 +10,10 @@ RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /lomkelar/wordpress/index.php [L]
+
+RewriteCond %{HTTP_REFERER} !example\.com [NC]
+RewriteCond %{THE_REQUEST} \.php[\ /?].*HTTP/ [NC]
+RewriteRule ^wp-admin/load-scripts\.php$ – [R=403,L]
 </IfModule>
 
 # END WordPress
